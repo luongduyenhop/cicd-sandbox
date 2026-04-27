@@ -1,0 +1,9 @@
+name: My first CI
+on: [push]
+jobs:
+  check-version:
+    runs-on: ubuntu-latest
+    steps:
+     - uses: actions/checkout@v4
+     - name: check Node version
+       run: node-v
